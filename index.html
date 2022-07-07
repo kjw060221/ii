@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, intital-scale=1.0">
+        <link rel="stylesheet" href="stily.css">
+        <title>calculator</title>
+        <body>
+          <h1>CALCULATOR</h1>
+          <div class="calculator">
+            <form name="forms">
+                <input type="text" name="output" readonly>
+                <div><input type="button" value="1" onclick="document.forms.output.value+='1'">
+                    <input type="button" value="2" onclick="document.forms.output.value+='2'">
+                    <input type="button" value="3" onclick="document.forms.output.value+='3'">
+                </div>
+                <div><input type="button" value="4" onclick="document.forms.output.value+='4'">
+                    <input type="button" value="5" onclick="document.forms.output.value+='5'">
+                    <input type="button" value="6" onclick="document.forms.output.value+='6'">
+                </div>
+                <div> <input type="button" value="7" onclick="document.forms.output.value+='7'">
+                    <input type="button" value="8" onclick="document.forms.output.value+='8'">
+                    <input type="button" value="9" onclick="document.forms.output.value+='9'">
+                </div>
+               <div><input type="button" value="0" onclick="document.forms.output.value+='0'">
+            </div>
+            <footer> <input type="button" class="operator" value="+" onclick="document.forms.output.value+='+'">
+                <input type="button" class="operator" value="-" onclick="document.forms.output.value+='-'">
+                <input type="button" class="operator" value="*" onclick="document.forms.output.value+='*'">
+                <input type="button" class="operator" value="/" onclick="document.forms.output.value+='/'">
+                <input type="button" class="dot" value="." onclick="document.forms.output.value+='.'">
+                <input type="button" class="clear" value="c" onclick="document.forms.output.value+=''">
+                <div><input type="button" class="operresulttor " value="=" onclick="document.forms.output.value=eval(document.forms.output.value)"> 
+                    <input type="button" class="fuck" value="ㅗ" onclick="document.forms.output.value+='ㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗ'">
+                </div>
+            </footer>
+               </form>
+          </div>
+           <div>
+            <a href="https://www.desmos.com/scientific?lang=ko"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADExMQqKirU1NS1tbUZGRkyMjKqqqqvr687OztMTEzJycnc3NwcHBz29vaZmZnb29vj4+Pu7u59fX1dXV1zc3OEhIQNDQ2QkJBpaWlWVlbr6+shISFkZGT5+fmenp5BQUG9vb10Q9OsAAAFF0lEQVR4nO2dbVfiMBBGbUFqS1kQRBDBqv//R+6es0rSNIlTZ5JBee7HPbNPc32jpEPm5mYMm3q3bWaFHrNmu6s3o9Y8Rm81V3Szma+SSK722mIW+5W437u204B3WcEnbR8PT4J+3UHbxsuhEzN81nYJ8CwluNM2CbKTEay1PSLUEoJHbYsoRwHDh37kQ11O9Shrdzl8wbWddxL5qWBSn+wlrdl5WyttuxRYIJ9lb03sNCvsRWJ5IrxYq+J+1a27tUZkcTI0ZlncuzfrbmYqsjYZpmZZB15SV8n9wItifhUr3r3b0bxluhVamwy353XteS+J1msF/8+yJGILW5xzZsn2Dr7FxuylLFhB7TlnIrQ0KSbnlbWsnPIHGJasHBjqAUMqIcNleZebsn8DmthwVWjQ2yNNa/io4fePx1yGpe/qWbBkkho++C6eBWvPIqlh5bt4FqpMhnqP12YwhCEMB4aTJgcTRUPhp5QB3hUN8+zd3MKQAwxZ4VRgyAqHISucCgxZ4TBkhVOBISschqxwKjBkhcOQFU4FhqxwGLLCqcCQFQ5DVjgVGLLCYcgKpwJDVjgMWeFUYMgKhyErnAoMWeEwZIVTgSErHIascCowZIXDkBVOBYascBiywqnAkBUOQ1Y4FRiywmHICqcCQ1Y4DFnhVGDICochK5wKDFnhMGSFU4EhK/zqP/d0qnJwUjTMDQxhCMNPfv/n8X//mQq//1wMtW+ifZRn4vNpXjX8ild7CanPGNpM69xM+wfG4ZwoKjDUA4ZUYKgHDKnAUA8YUoGhHjCkcsWG69ZH6GjtBNWJDcPTn3z7/O+hWVh7bzUtO61hbPrTcJhWrHo4syl2vK1dndRw6rv6mXsn4l6w2hrPkNQwPh3JnVCUqDqpYeO7+Bl3SsRbtPrNqd5Gq60hIoq7+nMnIr5DXjnV8QGEl/HcAoYwvCzD2Z9PzL+FDX3VYUNfdX7Dulv+pzPj58KGd+fqO4KhL1uz28R0hIQNzUgzs+awoS8bhjCEIQxhCEMYahhW80+MR9jQVx029FXjzhuGMLwew/ia3YHn8X0rd0BtfIz7ZfQmunOkE1Ur9ia6IyVbwepsvYmxuWvDUeCx6sdBdeybmG3uWuzhwvCxRaLq5L2J7a2P1j8kO1TtH0+7JFXjCSkVGOoBQyow1AOGVGCoBwypwFAPGFK5YsP1/WLIfbDbUL46dW9iaDOq8nYbpqi+pN7EWLfhuOoL7U1cRKsXTjV6E/MYvkVXkbI30arGrj4MYXg1hiN7E08fxaef05vo6zaU6k30VaMXA4YwhCEMYQhD3XMTzeciw4a+NYcNfdn5DSfNJ+aCYUNfddjQV407bxjC8HoM0ZvYJ9bWNmxsQ29iHkP0Jrr8yN7EZXnno+28KV0rUF32+x7xhJQKDPWAIZX2Bxi6L6njMA9wZ/6mbC025ubYfYw8jrV5NQp1TuggtrCjOeIpzywLKmYfZH9kBXXmfYT79FoX8zS88t83kDmYn4bp19XZsNpBDswo62wx962cJtabTu6clKWJKl5EFifBi7Uq/8d0RmC3f2zZaSIse2tix1l/loviVH/9H5JTn+wlCbyIOW9JH+pyqkdZu8vhC94ci0uG92L4Qf31ddQQ+q2Jd9Np4vb9fZv4JqYe7tbs9+kOX19NgQPzfq1HrCtYi+HZpyzCJ8NqIT/VbhU6K1eDvW+nlc1mFX8wlI/5KtmGw6bebRu9oWRFMWu2u3qc3l8nHZCAi5UJIwAAAABJRU5ErkJggg==" width="20" height="20"> </a>
+           </div>
+           <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">1</button>
+
+<img id="myImage" src='https://www.w3schools.com/js/pic_bulboff.gif' style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">2</button>
+        </body>
+    </head>
+</html>
