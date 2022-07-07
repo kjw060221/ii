@@ -1,0 +1,115 @@
+h1{
+  color: orange;
+}
+
+.operator {
+    position: relative;
+    padding: 8px 16px;
+    background: #ccff00;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .operator:active {
+    background: #44baa4;
+  }
+  
+  .button__text {
+    font: bold 20px "Quicksand", san-serif;
+    color: #ffffff;
+    transition: all 0.2s;
+  }
+  
+
+  .dot {
+    position: relative;
+    padding: 8px 16px;
+    background: #ccff00;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .dot:active {
+    background: #44baa4;
+  }
+  
+  .button__text {
+    font: bold 20px "Quicksand", san-serif;
+    color: #ffffff;
+    transition: all 0.2s;
+  }
+  
+
+  .clear {
+    position: relative;
+    padding: 8px 16px;
+    background: #ff0000;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .clear:active {
+    background: #44baa4;
+  }
+  
+  .clear__text {
+    font: bold 20px "Quicksand", san-serif;
+    color: #ffffff;
+    transition: all 0.2s;
+  }
+  
+  .button--loading .button__text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  
+  .operresulttor {
+    position: relative;
+    padding: 8px 16px;
+    background: #ccff00;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .operresulttor:active {
+    background: #44baa4;
+  }
+  
+  .operresulttor__text {
+    font: bold 20px "Quicksand", san-serif;
+    color: #ffffff;
+    transition: all 0.2s;
+  }
+  
+  .button--loading .button__text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+.fuck{
+    position: relative;
+    padding: 8px 16px;
+    background: #7d44ba;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.fuck:active {
+    background-color: aqua;
+}
+.fuck__text {
+    font: bold 20px "Quicksand", san-serif;
+    color: #ffffff;
+    transform: all 0.2s;
+
+}
